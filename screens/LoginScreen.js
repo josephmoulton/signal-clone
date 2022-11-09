@@ -34,14 +34,14 @@ const LoginScreen = ({ navigation }) => {
           autoFocus
           type="email"
           value={email}
-          onChanceText={(text) => setEmail(text)}
+          onChangeText={(text) => setEmail(text)}
         />
         <Input
           placeholder="Password"
           secureTextEntry
           type="password"
           value={password}
-          onChanceText={(text) => setPassword(text)}
+          onChangeText={(text) => setPassword(text)}
         />
       </View>
       <Button containerStyle={styles.button} onPress={signIn} title="Login" />
