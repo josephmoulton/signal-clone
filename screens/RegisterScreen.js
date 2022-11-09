@@ -23,10 +23,11 @@ const RegisterScreen = ({ navigation }) => {
           displayName: name,
           photoURL:
             imageUrl ||
-            "https://cencup.com/wp-content/uploads/2019/07/avatar-placeholder.png",
+            "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541",
         });
       })
       .catch((error) => alert(error.message));
+    navigation.replace("Home");
   };
 
   return (
